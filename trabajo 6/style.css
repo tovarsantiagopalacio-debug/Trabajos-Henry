@@ -1,0 +1,72 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+    background-color: #a5d8f0; 
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedor-precios {
+    display: flex;
+    justify-content: space-around; 
+    gap: 25px; 
+    width: 90%; 
+    max-width: 1200px;
+}
+
+.tarjeta {
+    display: flex; 
+    flex-direction: column; 
+    flex-grow: 1; 
+    flex-basis: 300px; 
+    
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    padding-bottom: 20px;
+    overflow: hidden; 
+}
+
+
+.cabecera {
+
+    background-color: #ff9999; 
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    font-size: 1.2em;
+    padding: 20px 0;
+    text-align: center;
+}
+
+
+.tarjeta ul {
+    list-style: none; 
+    padding: 20px 30px;
+    margin: 0;
+    color: #444;
+
+    flex-grow: 1; 
+}
+
+.tarjeta li {
+    padding: 8px 0;
+    border-bottom: 1px solid #eee;
+    text-align: left;
+}
+.tarjeta li:last-child {
+    border-bottom: none;
+}
+
+
+.tarjeta button {
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    color: #666;
+    padding: 10px 20px;
+    margin: 0 30px;
+    cursor: pointer;
+    border-radius: 5px;
+    align-self: center; 
+}

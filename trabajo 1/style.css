@@ -1,6 +1,4 @@
-/*
-    1. Contenedor Principal: Dsitribucion y alineacion de los elementos 
-*/
+
 .main {
     display: flex;
     justify-content: space-between;

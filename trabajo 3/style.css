@@ -1,0 +1,39 @@
+html, body {
+    height: 100%; 
+    margin: 0;
+    background-color: #f8f5ee; 
+    font-family: sans-serif;
+}
+
+body {
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+}
+.caja-centrada h3 {
+    margin-top: 0;
+    font-weight: bold;
+    color: #716c6c;
+}
+
+.caja-centrada {
+    max-width: 400px;
+    background-color: #dfcec57c;
+    border: 1px solid #d5c8b7; 
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(2, 2, 2, 0.2);
+    
+    text-align: center; 
+}
+
+.caja-centrada h3 {
+    margin-top: 0;
+    font-weight: bold;
+    color: #444;
+}
+
+.caja-centrada p {
+    color: #666;
+    line-height: 1.5;
+    text-align: left;
+}
