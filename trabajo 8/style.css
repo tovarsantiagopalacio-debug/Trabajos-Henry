@@ -1,0 +1,116 @@
+/* Estilos Globales y Reset Básico */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0; /* Fondo gris claro */
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* 1. HEADER (Contenedor superior) */
+.main-header {
+    background-color: #f78d8d; /* Color rojo/rosa salmón */
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* 2. NAV (Barra de navegación) */
+.main-nav {
+    background-color: #008080; /* Color verde azulado */
+    color: white;
+    padding: 10px 20px;
+
+    /* PROPIEDADES FLEXBOX: Contenedor para la navegación */
+    display: flex;
+    justify-content: space-between; /* Distribuye el menú y los idiomas a los extremos */
+    align-items: center; /* Centra verticalmente los elementos */
+}
+
+.nav-links {
+    /* PROPIEDADES FLEXBOX: Contenedor para los enlaces del menú */
+    display: flex;
+    gap: 20px; /* Espacio entre cada elemento del menú */
+}
+
+.nav-links a, .lang-links a {
+    padding: 5px 15px;
+    transition: background-color 0.3s;
+}
+
+.lang-links {
+    /* Estilos para los enlaces de idioma */
+    display: flex;
+    gap: 10px;
+}
+
+/* 3. CONTENIDO PRINCIPAL (El corazón de la distribución) */
+.content-container {
+    /* PROPIEDADES FLEXBOX: Contenedor padre de Aside y Main */
+    display: flex;
+    /* --- CAMBIO 1: INVERTIMOS EL ORDEN DE LAS COLUMNAS --- */
+    flex-direction: row-reverse; 
+    /* ---------------------------------------------------- */
+    max-width: 1200px; /* Límite de ancho para que el contenido no sea muy extenso */
+    margin: 20px auto; /* Centra el contenedor en la página y da margen */
+    padding: 0 20px;
+}
+
+/* ASIDE (El señor Aside - Columna Derecha) */
+.sidebar {
+    /* PROPIEDADES FLEXBOX: No crece (0), No se encoge (0), Ancho base de 350px. */
+    flex: 0 0 350px; 
+    padding: 20px;
+    background-color: #ffffff;
+    /* --- CAMBIO 2: AJUSTAMOS EL MARGEN PARA DEJAR ESPACIO A LA IZQUIERDA --- */
+    /* margin-right: 20px; <--- ELIMINADO/COMENTADO */
+    margin-left: 20px; /* <--- AÑADIDO */
+    /* ---------------------------------------------------------------------- */
+    border: 1px solid #ccc;
+}
+
+/* El tamaño de la caja del placeholder debe ajustarse para caber en 350px */
+.box-400 {
+    width: 310px; /* Ajustado para caber dentro del sidebar con padding */
+    height: 400px; /* El alto es 400px */
+}
+
+/* ARTICLE (Contenido Central/Izquierda) */
+.main-content {
+    /* PROPIEDADES FLEXBOX: El contenido principal toma todo el espacio restante. */
+    flex: 1; 
+    padding: 20px;
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+}
+
+/* Estilos para los bloques de imagen de ejemplo */
+.placeholder-box {
+    background-color: #ccc;
+    color: #666;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.box-668 {
+    width: 100%; /* Ocupa todo el ancho del artículo */
+    height: 200px; 
+}
+
+.article-meta {
+    font-style: italic;
+    color: #666;
+}
